@@ -21,28 +21,7 @@ int main(){
     //holis
     do{
         opcion = menu();
-        switch(opcion){
-            case 1:
-            	system("cls");
-                printf("Ingrese los kilometros que recorrera: ");
-                scanf("%d", &kilometros);
-                system("cls");
-                printf("Los Kilometros han sido ingresados con exito.\n\n");
-                system("pause");
-                break;
-            case 2:
-            	system("cls");
-                printf("Ingrese el precio del vuelo Aerolineas: ");
-                scanf("%d", &precioAerolineas);
-                printf("Ingrese el precio del vuelo Latam: ");
-                scanf("%d", &precioLatam);
-                system("cls");
-                printf("Los precios de vuelos han sido ingresados con exito.\n\n");
-                system("pause");
-                break;
-            case 3:
-            	system("cls");
-                tarjetaDebitoAerolineas = descuento(precioAerolineas);
+        switch(opcion){             tarjetaDebitoAerolineas = descuento(precioAerolineas);
                 tarjetaCreditoAerolineas = aumento(precioAerolineas);
                 tarjetaDebitoLatam = descuento(precioLatam);
                 tarjetaCreditoLatam = aumento(precioLatam);
