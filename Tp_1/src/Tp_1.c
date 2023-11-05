@@ -18,7 +18,7 @@ int main(){
     float diferenciaPrecio;
     int opcion;
     char salir = 'n';
-
+    //holis
     do{
         opcion = menu();
         switch(opcion){
